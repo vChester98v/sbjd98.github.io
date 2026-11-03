@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <title>드림델 - 꿈의 운송 서비스, 고객님의 든든한 운송 파트너</title>
+    <meta name="description" content="오토바이 퀵부터 11톤 화물, 전국 연계 운송까지! 꿈의 운송 서비스, 고객님의 든든한 운송 파트너 드림델.">
+    <meta name="keywords" content="오토바이, 퀵, 11톤 화물, 전국 연계 운송, 운송 파트너, 드림델">
+    <meta name="author" content="드림델">
+
+    <meta property="og:title" content="드림델 - 꿈의 운송 서비스, 고객님의 든든한 운송 파트너">
+    <meta property="og:description" content="오토바이 퀵부터 11톤 화물, 전국 연계 운송까지! 꿈의 운송 서비스, 고객님의 든든한 운송 파트너 드림델.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico" sizes="any">
+
+    <!-- 성능 최적화: CSS 프리로드 -->
+    <link rel="preload" href="css/tailwind.css" as="style">
+    <link rel="preload" href="css/styles.css" as="style">
+
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <main class="bg-white">
+        <div id="home" class="relative min-h-[100vh]">
+            <header>
+                <!-- CSS 기반 모바일 메뉴를 위한 체크박스 -->
+                <input type="checkbox" id="menu-toggle" class="hidden">
+
+                <nav class="z-50 w-full fixed">
+                    <div
+                        class="relative flex items-center justify-between max-w-[1440px] mx-auto h-16 px-4 md:h-24 md:px-5 2xl:px-0">
+                        <div class="flex items-center gap-4">
+                            <a href="index.html">
+                                <picture>
+                                    <source media="(min-width: 768px)" srcset="images/logo.svg">
+                                    <img src="images/logo_white.svg" alt="드림델 로고" class="w-[63px] md:w-[107px]">
+                                </picture>
+                            </a>
+                            <div class="blur-text border border-[var(--color-border)]/30 text-white"><a
+                                    href="tel:15885452">1588-5452</a></div>
+                        </div>
+
+                        <!-- 데스크톱 메뉴 -->
+                        <div
+                            class="hidden gnb text-white/60 text-center font-medium xl:flex xl:align-middle xl:gap-8 xl:text-xl">
+                            <a href="#home"><span>HOME</span></a>
+                            <a href="#intro"><span>회사소개</span></a>
+                            <a href="#area"><span>사업영역</span></a>
+                            <a href="#service"><span>법인서비스</span></a>
+                            <a href="#contact"><span>문의하기</span></a>
+                            <a href="#recruit"><span>기사모집</span></a>
+                            <div><button class="coupon-download-btn text-white" type="button">쿠폰판 다운로드</button></div>
+                        </div>
+
+                        <!-- 모바일 햄버거 메뉴 버튼 (체크박스 label로 변경) -->
+                        <label for="menu-toggle"
+                            class="absolute top-1/2 -translate-y-1/2 right-3 xl:hidden cursor-pointer"
+                            id="mobileMenuBtn">
+                            <svg class="w-9 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="2" x="3" y="6" fill="white" />
+                                <rect width="24" height="2" x="3" y="12" fill="white" />
+                                <rect width="24" height="2" x="3" y="18" fill="white" />
+                            </svg>
+                        </label>
+                    </div>
+
+                    <!-- 오버레이 배경 -->
+                    <div class="fixed inset-0 z-40" id="mobileMenuOverlay"></div>
+                    <!-- 모바일 메뉴 -->
+                    <div class="fixed top-0 right-0 w-3/4 h-full bg-white z-50" id="mobileMenu">
+                        <!-- 닫기 버튼 -->
+                        <div class="flex justify-end p-4">
+                            <label for="menu-toggle" class="p-2 cursor-pointer">
+                                <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 6l12 12M6 18L18 6" stroke="black" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </label>
+                        </div>
+                        <div class="flex flex-col gap-8 pt-5 text-center text-xl font-bold">
+                            <a href="#home">HOME</a>
+                            <a href="#intro">회사소개</a>
+                            <a href="#area">사업영역</a>
+                            <a href="#service">법인서비스</a>
+                            <a href="#contact">문의하기</a>
+                            <a href="#recruit">기사모집</a>
+                            <button class="coupon-download-btn text-[var(--brand-orange)]" type="button">쿠폰판
+                                다운로드</button>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <video class="hero-video absolute inset-0 h-full w-full object-cover" autoplay muted loop playsinline>
+                <source src="images/main_visual.mp4" type="video/mp4">
+            </video>
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div
+                class="max-w-[1440px] mx-auto absolute top-1/2 left-0 right-0 -translate-y-1/2 px-7 text-white flex flex-col justify-between h-[70%]">
+                <div>
+                    <h2 class="text-[clamp(1.375rem,0.827rem+2.44vw,3.75rem)]">꿈의 운송 서비스,<br>고객님의 든든한 운송 파트너 <img
+                            src="images/logo.svg" alt="드림델 로고"
+                            class="block w-[clamp(6.688rem,5.418rem+5.64vw,12.188rem)] pt-2 md:inline md:pt-0 md:align-text-top">
+                    </h2>
+                    <p class="opacity-90 pt-6 font-medium text-[clamp(1rem,0.712rem+1.28vw,2.25rem)]">오토바이 퀵부터 11톤
+                        화물,
+                        전국연계 운송까지</p>
+                </div>
+                <div class="rolling-text">
+                    <div class="rolling-text__track">
+                        <p><strong>10</strong>분 빠르게 픽업하고</p>
+                        <p><strong>10</strong>분 빠르게 배송하기 위해</p>
+                        <p>오늘도 노력하겠습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <button id="scrollDownBtn"
+                class="absolute bottom-10 left-1/2 -translate-x-1/2 text-gray-400 hover:text-white transition-colors duration-300 xl:hidden">
+                <svg class="w-10 h-8 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 10l-9 6m0 0l-8-6">
+                    </path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- 회사소개 -->
+        <section id="intro">
+            <div class="content">
+                <div class="title">
+                    <h2>30년 신뢰의<br>도심 퀵서비스, <strong>드림델</strong>
+                    </h2>
+                    <p>수도권 10분 내 신속한 배차부터 <br class="sm:hidden">전국 당일 연계 특송까지 지원합니다.</p>
+                </div>
+
+                <div
+                    class="flex flex-col gap-y-3 lg:grid lg:grid-cols-3 lg:gap-5 xl:gap-9 sm:text-lg lg:text-xl xl:text-2xl">
+                    <div class="border-box">
+                        <div class="pb-2 sm:pb-4 sm:text-xl lg:text-2xl xl:text-3xl">
+                            <strong class="text-[1.125em] text-[var(--brand-orange)]">&#x25AA;10분</strong> 내 배차
+                        </div>
+                        <p class="text-[var(--color-gray)]">수도권 전역 1,200대 기사 <br class="sm:hidden lg:block">실시간 최단거리 배차
+                        </p>
+                    </div>
+                    <div class="border-box">
+                        <div class="pb-2 sm:pb-4 sm:text-xl lg:text-2xl xl:text-3xl">
+                            <strong class="text-[1.125em] text-[var(--brand-orange)]">&#x25AA;5,000만</strong> 책임보상
+                        </div>
+                        <p class="text-[var(--color-gray)]">현대해상 적재물 배상책임보험 <br class="sm:hidden lg:block"><span
+                                class="underline">최대
+                                5,000만원 보장</span></p>
+                    </div>
+                    <div class="border-box">
+                        <div class="pb-2 sm:pb-4 sm:text-xl lg:text-2xl xl:text-3xl">
+                            <strong class="text-[1.125em] text-[var(--brand-orange)]">&#x25AA;월 1회</strong> 후불 정산
+                        </div>
+                        <p class="text-[var(--color-gray)]">월말 합산 전자세금계산서 발행 <br class="sm:hidden lg:block">및 전담 배차 담당자
+                            배정</p>
+                    </div>
+                    <dl class="intro-info border-box col-span-1 flex flex-col gap-3 lg:justify-between">
+                        <div>
+                            <dt class="pb-2 text-[0.875em] text-[var(--color-gray)]">&middot; 설립연도</dt>
+                            <dd class="font-semibold">1994년 (30년 전통)</dd>
+                        </div>
+                        <div>
+                            <dt class="pb-2 text-[0.875em] text-[var(--color-gray)]">&middot; 사업인가</dt>
+                            <dd class="font-semibold">국토교통부 정식허가</dd>
+                        </div>
+                        <div>
+                            <dt class="pb-2 text-[0.875em] text-[var(--color-gray)]">&middot; 적재물 보험</dt>
+                            <dd class="font-semibold">현대해상 5,000만원</dd>
+                        </div>
+                        <div>
+                            <dt class="pb-2 text-[0.875em] text-[var(--color-gray)]">&middot; 본사위치</dt>
+                            <dd class="font-semibold">서울 강남구 논현동 114-14 <a href="https://naver.me/xCj7hObX"
+                                    target="_blank" class="inline-block align-top pl-2">
+                                    <img src="images/ico_location.svg" alt="본사위치 안내" class="w-6 lg:w-8"></a></dd>
+                        </div>
+                    </dl>
+                    <div class="overflow-hidden border-box !p-0 col-span-2 lg:flex lg:flex-row-reverse">
+                        <div class="intro-bg relative pt-[50%] lg:w-full lg:h-full lg:pt-0">
+                            <p
+                                class="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-max min-w-[250px] py-1 rounded-full border border-white/30 bg-black/60 text-center sm:text-xl lg:text-2xl xl:text-3xl sm:py-2 sm:px-10 lg:bottom-8">
+                                <span class="text-[0.875em] block text-white sm:inline">배차 전문 상담원 1:1 직통 안내</span>
+                                <strong class="text-[var(--brand-orange)]">1588-5452</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contact" class="request-link">기업 물류 견적 문의</a>
+            </div>
+        </section>
+
+        <!-- 사업영역 -->
+        <div class="bg-[linear-gradient(180deg,rgba(242,242,242,0.7)_0%,rgba(242,242,242,0)_100%)]">
+
+            <!-- 운송라인업 -->
+            <section id="area">
+                <div class="content">
+                    <div class="title">
+                        <h2>화물 크기와 긴급도에 맞춘<br><strong>최적의 운송 라인업</strong></h2>
+                        <p>도심 소형 긴급 퀵배송부터 1톤 화물, <br>KTX&middot;항공 전국 당일 특송까지 지원합니다.</p>
+                    </div>
+
+                    <div
+                        class="tab-menu overflow-hidden grid grid-cols-2 gap-2 mb-3 sm:text-lg lg:grid-cols-4 lg:gap-0 lg:mb-0 lg:bg-[var(--color-border)] lg:rounded-3xl lg:rounded-bl-none lg:rounded-br-none lg:text-xl xl:text-2xl">
+                        <button data-tab="bike">오토바이 운송 <span class="badge">최대 10kg</span></button>
+                        <button data-tab="vehicle">차량 운송 <span class="badge">다마스&middot;라보&middot;1톤</span></button>
+                        <button data-tab="express">전국연계 특송 <span class="badge">KTX&middot;항공</span></button>
+                        <button data-tab="custom">맞춤 특수옵션 <span class="badge">예약&middot;보관&middot;경유</span></button>
+                    </div>
+
+                    <div id="bike"
+                        class="tab-content border-box bg-white md:!rounded-tl-none md:!rounded-tr-none sm:text-lg lg:text-xl xl:text-2xl">
+                        <div class="grid grid-cols-3 gap-4 md:grid-rows-[max-content_max-content] lg:gap-6">
+
+                            <div class="border-box small col-span-1 flex items-center md:row-span-2 lg:row-span-3">
+                                <img id="transportImage" src="images/img_bike.jpg" alt="오토바이" class="w-full">
+                            </div>
+                            <div class="col-span-2 md:row-span-1">
+                                <h3 class="text-[1.125em] pb-2 lg:pb-4"><strong
+                                        class="text-[var(--brand-orange)]">오토바이</strong> 운송 서비스</h3>
+                                <p class="text-[0.875em] text-[var(--color-gray)]">도심 정체 속에서도 신속하게 서류, 소형 패키지, 긴급 물품을
+                                    안전하게 운송합니다.</p>
+                            </div>
+
+                            <dl class="border-box small col-span-3 md:col-span-2 md:row-span-1">
+                                <dt class="font-medium pb-2 text-[0.875em] text-[var(--color-gray)] lg:pb-4">운행 및 접수 시간
+                                </dt>
+                                <div class="xl:flex xl:gap-6">
+                                    <dd><span>&middot; 평일</span> 08:00-20:00</dd>
+                                    <dd>&middot; <span class="text-[var(--color-blue)]">토요일</span> 09:00-19:00</dd>
+                                    <dd>&middot; <span class="text-[var(--color-red)]">일&middot;공휴일</span> 10:00-18:00
+                                    </dd>
+                                </div>
+                            </dl>
+
+                            <div
+                                class="col-span-3 md:flex md:justify-between md:gap-4 lg:col-span-2 lg:row-span-1 lg:gap-6">
+                                <div class="border-box small md:flex-1">
+                                    <div
+                                        class="flex flex-row-reverse justify-between border-b border-[var(--color-border)] pb-3 lg:flex-col lg:gap-4 lg:pb-4">
+                                        <span class="badge self-start !border-none">표준 퀵배송</span>
+                                        <p class="sm:text-xl lg:text-2xl xl:text-3xl"><em
+                                                class="text-[1.125em]">90</em>분 내외 (10km)</p>
+                                    </div>
+                                    <div class="text-[var(--color-gray)]">
+                                        <div class="flex justify-between items-center py-3 lg:py-4">
+                                            <span>수도권 전역</span>
+                                            <em class="text-[#252525]">120분 내외</em>
+                                        </div>
+                                        <p class="text-[0.875em]">규격 소형물품 표준 경로 배송</p>
+                                    </div>
+                                </div>
+                                <div class="border-box small my-4 md:my-0 md:flex-1">
+                                    <div
+                                        class="flex flex-row-reverse justify-between border-b border-[var(--color-border)] pb-3 lg:flex-col lg:gap-4 lg:pb-4">
+                                        <span class="badge self-start !border-none">단독 직송</span>
+                                        <p class="sm:text-xl lg:text-2xl xl:text-3xl"><em
+                                                class="text-[1.125em]">60</em>분 내외 (10km)</p>
+                                    </div>
+                                    <div class="text-[var(--color-gray)]">
+                                        <div class="flex justify-between items-center py-3 lg:py-4">
+                                            <span>수도권 전역</span>
+                                            <em class="text-[#252525]">90분 내외</em>
+                                        </div>
+                                        <p class="text-[0.875em]">접수 즉시 최우선 픽업 & 1:1직통</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="sm:border sm:border-[var(--color-border)] sm:rounded-[clamp(0.75rem,0.635rem+0.51vw,1.25rem)] sm:p-[clamp(1rem,0.885rem+0.51vw,1.5rem)] sm:flex sm:justify-between md:mt-4 md:justify-start md:gap-10 lg:gap-20 lg:mt-6">
+                            <dl>
+                                <dt class="pb-2 text-[0.875em] text-[var(--color-gray)] lg:pb-4">적재 규격</dt>
+                                <div class="md:flex md:gap-4">
+                                    <dd>&middot; 최대 중량 <span class="text-[var(--brand-orange)] underline">10kg</span> 이내
+                                    </dd>
+                                    <dd>&middot; 3면 합 <span class="text-[var(--brand-orange)] underline">100cm</span> 이내
+                                    </dd>
+                                </div>
+                            </dl>
+                            <dl>
+                                <dt class="pt-4 pb-2 text-[0.875em] text-[var(--color-gray)] sm:pt-0 lg:pb-4">운송 권역</dt>
+                                <dd>&middot; <em>서울&middot;경기&middot;인천</em> 전역 실시간 배차</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div id="vehicle"
+                        class="tab-content border-box bg-white md:!rounded-tl-none md:!rounded-tr-none sm:text-lg lg:text-xl xl:text-2xl"
+                        hidden>
+                        <div class="grid grid-cols-3 gap-4 md:grid-rows-[max-content_max-content] lg:gap-6">
+
+                            <div class="border-box small col-span-1 flex items-center md:row-span-2 lg:row-span-3">
+                                <img id="transportImage" src="images/img_vehicle.jpg" alt="다마스" class="w-full">
+                            </div>
+                            <div class="col-span-2 md:row-span-1">
+                                <h3 class="text-[1.125em] pb-2 lg:pb-4"><strong
+                                        class="text-[var(--brand-orange)]">차량</strong> 운송 서비스 (다마스/라보/1톤)</h3>
+                                <p class="text-[0.875em] text-[var(--color-gray)]">오토바이 적재가 어려운 다량 박스, 가전&middot;가구, 파레트
+                                    화물을 규격에 맞춰 안전하게 운송합니다.</p>
+                            </div>
+
+                            <dl class="border-box small col-span-3 md:col-span-2 md:row-span-1">
+                                <dt class="font-medium pb-2 text-[0.875em] text-[var(--color-gray)] lg:pb-4">차량 배차 및 접수
+                                    시간</dt>
+                                <div class="xl:flex xl:gap-6">
+                                    <dd><span>&middot; 평일</span> 08:00-20:00</dd>
+                                    <dd>&middot; <span class="text-[var(--color-blue)]">토요일</span> 09:00-19:00</dd>
+                                    <dd>&middot; <span class="text-[var(--color-red)]">일&middot;공휴일</span> 10:00-18:00
+                                    </dd>
+                                </div>
+                            </dl>
+
+                            <div
+                                class="col-span-3 md:flex md:justify-between md:gap-4 lg:col-span-2 lg:row-span-1 lg:gap-6">
+                                <div class="border-box small md:flex-1">
+                                    <div
+                                        class="flex flex-row-reverse justify-between border-b border-[var(--color-border)] pb-3 md:flex-col md:gap-4 md:pb-4">
+                                        <span class="badge self-start !border-none">밀폐형 벤</span>
+                                        <p class="sm:text-xl lg:text-2xl xl:text-3xl"><em
+                                                class="text-[1.125em]">350</em>kg 적재</p>
+                                    </div>
+                                    <div class="text-[var(--color-gray)]">
+                                        <p class="pt-3 lg:pt-4 text-[0.875em]">소형 박스(최대 25박스), 서류, 우천 안심 완벽 밀폐 운송</p>
+                                    </div>
+                                </div>
+                                <div class="border-box small my-4 md:my-0 md:flex-1">
+                                    <div
+                                        class="flex flex-row-reverse justify-between border-b border-[var(--color-border)] pb-3 md:flex-col md:gap-4 md:pb-4">
+                                        <span class="badge self-start !border-none">오픈 카고</span>
+                                        <p class="sm:text-xl lg:text-2xl xl:text-3xl"><em
+                                                class="text-[1.125em]">450</em>kg 적재</p>
+                                    </div>
+                                    <div class="text-[var(--color-gray)]">
+                                        <div class="text-[var(--color-gray)]">
+                                            <p class="pt-3 lg:pt-4 text-[0.875em]">표준 파레트 1개, 소형 가구, 기계부품, 높은 화물 적재</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-box small my-4 md:my-0 md:flex-1">
+                                    <div
+                                        class="flex flex-row-reverse justify-between border-b border-[var(--color-border)] pb-3 md:flex-col md:gap-4 md:pb-4">
+                                        <span class="badge self-start !border-none">카고/탑차</span>
+                                        <p class="sm:text-xl lg:text-2xl xl:text-3xl"><em
+                                                class="text-[1.125em]">1,000</em>kg 적재</p>
+                                    </div>
+                                    <div class="text-[var(--color-gray)]">
+                                        <div class="text-[var(--color-gray)]">
+                                            <p class="pt-3 lg:pt-4 text-[0.875em]">대형 파레트 2개, 기업 대량 물류, 카고/탑차 맞춤 배차</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="sm:border sm:border-[var(--color-border)] sm:rounded-[clamp(0.75rem,0.635rem+0.51vw,1.25rem)] sm:p-[clamp(1rem,0.885rem+0.51vw,1.5rem)] sm:flex sm:justify-between md:mt-4 md:justify-start md:gap-10 lg:gap-20 lg:mt-6">
+                            <dl>
+                                <dt class="pb-2 text-[0.875em] text-[var(--color-gray)] lg:pb-4">소요 시간</dt>
+                                <div class="xl:flex xl:gap-4">
+                                    <dd>&middot; 일반 : 10km 90분 내외 (수도권 120분)</dd>
+                                    <dd>&middot; 급송 : <span class="text-[var(--brand-orange)] underline">60분 내외</span>
+                                        (수도권 90분)</dd>
+                                </div>
+                            </dl>
+                            <dl>
+                                <dt class="pt-4 pb-2 text-[0.875em] text-[var(--color-gray)] sm:pt-0 lg:pb-4">운송 권역</dt>
+                                <dd>&middot; <em>수도권</em> 전역 및 전국 주요 도시 당일 배송</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div id="express"
+                        class="tab-content border-box bg-white md:!rounded-tl-none md:!rounded-tr-none sm:text-lg lg:text-xl xl:text-2xl"
+                        hidden>
+                        <div class="grid grid-cols-3 gap-4 md:grid-rows-[max-content_max-content] lg:gap-6">
+
+                            <div class="border-box small col-span-1 flex items-center md:row-span-2 lg:row-span-3">
+                                <img id="transportImage" src="images/img_express.jpg" alt="버스" class="w-full">
+                            </div>
+                            <div class="col-span-2 md:row-span-1">
+                                <h3 class="text-[1.125em] pb-2 lg:pb-4"><strong class="text-[var(--brand-orange)]">전국
+                                        연계</strong> 당일 특송 서비스</h3>
+                                <p class="text-[0.875em] text-[var(--color-gray)]">KTX 특급망, 고속버스 터미널망, 국내 항공망과 연계하여 전국
+                                    주요 지역으로 당일 배송합니다.</p>
+                            </div>
+
+                            <dl class="border-box small col-span-3 md:col-span-2 md:row-span-1">
+                                <dt class="font-medium pb-2 text-[0.875em] text-[var(--color-gray)] lg:pb-4">전국 연계 접수 시간
+                                </dt>
+                                <div class="xl:flex xl:gap-6">
+                                    <dd><span>&middot; 평일</span> 08:00-20:00</dd>
+                                    <dd>&middot; <span class="text-[var(--color-blue)]">토요일</span> 09:00-19:00</dd>
+                                    <dd>&middot; <span class="text-[var(--color-red)]">일&middot;공휴일</span> 10:00-18:00
+                                    </dd>
+                                </div>
+                            </dl>
+
+                            <div
+                                class="col-span-3 md:flex md:justify-between md:gap-4 lg:col-span-2 lg:row-span-1 lg:gap-6">
+                                <div class="border-box small md:flex-1">
+                                    <div
+                                        class="flex flex-row-reverse justify-between border-b border-[var(--color-border)] pb-3 md:flex-col md:gap-4 md:pb-4">
+                                        <span class="badge self-start !border-none">초고속 연계</span>
+                                        <p class="sm:text-xl lg:text-2xl xl:text-3xl"><em
+                                                class="text-[1.125em]">5-7</em><span
+                                                class="lg:text-[0.688em] xl:text-[0.813em]">시간 소요 예상</span></p>
+                                    </div>
+                                    <div class="text-[var(--color-gray)]">
+                                        <p class="pt-3 lg:pt-4 text-[0.875em]">고속버스, KTX 5-7시간 내
+                                            당일 특급 연계</p>
+                                    </div>
+                                </div>
+                                <div class="border-box small my-4 md:my-0 md:flex-1">
+                                    <div
+                                        class="flex flex-row-reverse justify-between border-b border-[var(--color-border)] pb-3 md:flex-col md:gap-4 md:pb-4">
+                                        <span class="badge self-start !border-none">터미널 직송</span>
+                                        <p class="sm:text-xl lg:text-2xl xl:text-3xl"><em
+                                                class="text-[1.125em]">도어투도어</em></p>
+                                    </div>
+                                    <div class="text-[var(--color-gray)]">
+                                        <div class="text-[var(--color-gray)]">
+                                            <p class="pt-3 lg:pt-4 text-[0.875em]">수하물 발송 후 <br
+                                                    class="hidden md:block">현지 최종 문 앞 배송</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-box small my-4 md:my-0 md:flex-1">
+                                    <div
+                                        class="flex flex-row-reverse justify-between border-b border-[var(--color-border)] pb-3 md:flex-col md:gap-4 md:pb-4">
+                                        <span class="badge self-start !border-none">항공 특송</span>
+                                        <p class="sm:text-xl lg:text-2xl xl:text-3xl"><em class="text-[1.125em]">항공
+                                                당일</em></p>
+                                    </div>
+                                    <div class="text-[var(--color-gray)]">
+                                        <div class="text-[var(--color-gray)]">
+                                            <p class="pt-3 lg:pt-4 text-[0.875em]">김포공항 발 제주&middot;부산 등 원거리 도서지역 당일 도착
+                                                가능</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <dl class="flex items-center justify-end gap-3 md:pt-4 lg:pt-6">
+                            <dt class="text-[var(--color-gray)]">&middot; 연계 전담 문의</dt>
+                            <dd><em class="text-[1.3em] text-[var(--brand-orange)]">1588-5452</em></dd>
+                        </dl>
+                    </div>
+                    <div id="custom"
+                        class="tab-content border-box bg-white md:!rounded-tl-none md:!rounded-tr-none sm:text-lg lg:text-xl xl:text-2xl"
+                        hidden>
+                        <div class="grid grid-cols-3 gap-4 md:grid-rows-[max-content_max-content] lg:gap-6">
+
+                            <div class="border-box small col-span-1 flex items-center md:row-span-2 lg:row-span-3">
+                                <img id="transportImage" src="images/img_custom.jpg" alt="트럭" class="w-full">
+                            </div>
+                            <div class="col-span-2 md:row-span-1">
+                                <h3 class="text-[1.125em] pb-2 lg:pb-4"><strong
+                                        class="text-[var(--brand-orange)]">맞춤형</strong> 특수 운송 솔루션</h3>
+                                <p class="text-[0.875em] text-[var(--color-gray)]">정시 픽업 지정, 보관 후 출고, 복수 경유 등 거래처 현장 조건에
+                                    맞춘 부가 운송을 제공합니다.</p>
+                            </div>
+
+                            <dl class="border-box small col-span-3 md:col-span-2 md:row-span-1">
+                                <dt class="font-medium pb-2 text-[0.875em] text-[var(--color-gray)] lg:pb-4">특수 운송 상담 및
+                                    접수 시간</dt>
+                                <div class="xl:flex xl:gap-6">
+                                    <dd><span>&middot; 평일</span> 08:00-20:00</dd>
+                                    <dd>&middot; <span class="text-[var(--color-blue)]">토요일</span> 09:00-19:00</dd>
+                                    <dd>&middot; <span class="text-[var(--color-red)]">일&middot;공휴일</span> 10:00-18:00
+                                    </dd>
+                                </div>
+                            </dl>
+
+                            <div
+                                class="col-span-3 md:flex md:justify-between md:gap-4 lg:col-span-2 lg:row-span-1 lg:gap-6">
+                                <div class="border-box small md:flex-1">
+                                    <div
+                                        class="flex flex-row-reverse justify-between border-b border-[var(--color-border)] pb-3 md:flex-col md:gap-4 md:pb-4">
+                                        <span class="badge self-start !border-none">시간 예약</span>
+                                        <p class="sm:text-xl lg:text-2xl xl:text-3xl"><em class="text-[1.125em]">정시
+                                                지정</em></p>
+                                    </div>
+                                    <div class="text-[var(--color-gray)]">
+                                        <p class="pt-3 lg:pt-4 text-[0.875em]">고객이 지정한 정확한 일시 및 분 단위 픽업&정시 배송</p>
+                                    </div>
+                                </div>
+                                <div class="border-box small my-4 md:my-0 md:flex-1">
+                                    <div
+                                        class="flex flex-row-reverse justify-between border-b border-[var(--color-border)] pb-3 md:flex-col md:gap-4 md:pb-4">
+                                        <span class="badge self-start !border-none">안전 보관</span>
+                                        <p class="sm:text-xl lg:text-2xl xl:text-3xl"><em class="text-[1.125em]">보관 후
+                                                출고</em></p>
+                                    </div>
+                                    <div class="text-[var(--color-gray)]">
+                                        <div class="text-[var(--color-gray)]">
+                                            <p class="pt-3 lg:pt-4 text-[0.875em]">안전 물류 창고 보관 후 원하는 일정에 맞춘 순차 분할 배송</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-box small my-4 md:my-0 md:flex-1">
+                                    <div
+                                        class="flex flex-row-reverse justify-between border-b border-[var(--color-border)] pb-3 md:flex-col md:gap-4 md:pb-4">
+                                        <span class="badge self-start !border-none">다중 경유</span>
+                                        <p class="sm:text-xl lg:text-2xl xl:text-3xl"><em class="text-[1.125em]">순회
+                                                배송</em></p>
+                                    </div>
+                                    <div class="text-[var(--color-gray)]">
+                                        <div class="text-[var(--color-gray)]">
+                                            <p class="pt-3 lg:pt-4 text-[0.875em]">1회 접수로 여러 거래처 동시 순차 배송 및 영수증 회수 처리
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="sm:border sm:border-[var(--color-border)] sm:rounded-[clamp(0.75rem,0.635rem+0.51vw,1.25rem)] sm:p-[clamp(1rem,0.885rem+0.51vw,1.5rem)] md:mt-4 lg:mt-6 lg:flex lg:justify-between">
+                            <p>&middot; 월말 후불 세금계산서 발행 및 법인 전담 매니저 1:1 지원</p>
+                            <dl class="flex items-center gap-3">
+                                <dt class="text-[var(--color-gray)]">&middot; 연계 전담 문의</dt>
+                                <dd><em class="text-[1.125em] text-[var(--brand-orange)]">1588-5452</em></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="service">
+                <div class="content">
+                    <div class="title">
+                        <h2>기업 물류의 모든 번거로움,<br><strong>드림델</strong>이 전담합니다.</h2>
+                        <p>물량별 맞춤 요율 / 월 1회 합산 전자세금 계산서 / 전담 배차 담당자 지원</p>
+                    </div>
+
+                    <div class="lg:flex lg:gap-9">
+                        <div
+                            class="flex flex-col gap-4 px-3 sm:px-5 sm:text-lg lg:text-xl lg:w-[460px] lg:px-0 lg:gap-8 xl:text-2xl">
+                            <dl>
+                                <dt class="flex justify-between items-center pb-2 sm:pb-4">
+                                    <em class="circle text-[1.125em]">기업 맞춤 우대 단가제</em>
+                                </dt>
+                                <dd class="text-[var(--color-gray)]">주요 운송 구간과 월 발송 물량을 분석하여 기업 전용 할인 요율표를 적용합니다.</dd>
+                            </dl>
+                            <dl class="py-4 border-y border-[var(--color-border)] lg:py-8">
+                                <dt class="flex justify-between items-center pb-2 sm:pb-4">
+                                    <em class="circle text-[1.125em]">월 1회 통합 후불 정산</em>
+                                    <span
+                                        class="badge !bg-white !border-[var(--color-blue)] !text-[var(--color-blue)]">세무
+                                        간소화</span>
+                                </dt>
+                                <dd class="text-[var(--color-gray)]">건별 현장 결제 없이 월말 합산 전자세금계산서와 상세 배송 명세서를 발행합니다.</dd>
+                            </dl>
+                            <dl>
+                                <dt class="flex justify-between items-center pb-2 smpb-4">
+                                    <em class="circle text-[1.125em]">1:1 전담 배차 플래너</em>
+                                    <span
+                                        class="badge !bg-white !border-[var(--brand-orange)] !text-[var(--brand-orange)]">전담
+                                        지원</span>
+                                </dt>
+                                <dd class="text-[var(--color-gray)]">다량 동시 배송 시에도 전담 배차 담당자가 픽업부터 배송완료까지 확인합니다.</dd>
+                            </dl>
+                        </div>
+
+                        <div class="flex flex-col gap-4 pt-6 lg:pt-0 lg:gap-9 lg:flex-1">
+                            <div
+                                class="line-wrap border-box bg-white grid grid-cols-3 text-center text-[var(--color-gray)] text-sm sm:text-base lg:text-lg xl:text-xl">
+                                <p><strong
+                                        class="block pb-1 text-[1.25em] text-[var(--color-blue)] lg:pb-2">2,500+</strong>고정
+                                    법인 파트너</p>
+                                <p><strong
+                                        class="block pb-1 text-[1.25em] text-[var(--color-green)] lg:pb-2">99.8%</strong>정시
+                                    배송 준수율</p>
+                                <p><strong
+                                        class="block pb-1 text-[1.25em] text-[var(--color-red)] lg:pb-2">5,000만</strong>적재물
+                                    전액 보장</p>
+                            </div>
+                            <div class="border-box text-center">
+                                <h4 class="sm:text-lg lg:text-xl xl:text-2xl pb-5">주요 거래처 파트너사</h4>
+                                <div class="grid grid-cols-4 gap-5">
+                                    <div><img src="images/img_partner1.jpg" alt="CJ ONSTYLE"></div>
+                                    <div><img src="images/img_partner2.jpg" alt="Haagen-Dazs"></div>
+                                    <div><img src="images/img_partner3.jpg" alt="TOM FORD"></div>
+                                    <div><img src="images/img_partner4.jpg" alt="DKNY"></div>
+                                    <div><img src="images/img_partner5.jpg" alt="TDOS"></div>
+                                    <div><img src="images/img_partner6.jpg" alt="Yves Saint Laurent"></div>
+                                    <div><img src="images/img_partner7.jpg" alt="samyang"></div>
+                                    <div><img src="images/img_partner8.jpg" alt="dreamCIS"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="request-link">법인 전용 맞춤 견적 문의</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- 문의하기 -->
+        <section id="contact" class="bg-[#F8F8F8]">
+            <div class="content">
+                <div class="title">
+                    <h2>견적 및 상담 문의</h2>
+                    <p>품목과 지역만 남겨주시면 배차 전문 상담 매니저가 확인 후 신속히 맞춤 견적을 회신드립니다.</p>
+                </div>
+                <div class="lg:flex lg:gap-x-8">
+                    <div
+                        class="lg:flex-1 lg:border lg:border-[var(--color-border)] lg:rounded-[clamp(1.25rem,0.962rem+1.28vw,2.5rem)] lg:p-[clamp(1.25rem,0.962rem+1.28vw,2.5rem)] lg:bg-white">
+                        <form id="contactForm" class="flex flex-col gap-3 lg:grid lg:grid-cols-2 lg:gap-4 lg:text-lg">
+                            <input id="serviceName" type="text" placeholder="퀵 서비스">
+                            <input id="company" type="text" placeholder="회사명 (선택)">
+                            <input id="contactPerson" type="text" placeholder="담당자명 (필수)">
+                            <input id="phone" type="tel" placeholder="연락처 (필수)">
+                            <input id="companyAddr" type="text" placeholder="회사명 (동/구 또는 주소)">
+                            <input id="destAddr" type="text" placeholder="도착지 (동/구 또는 주소)">
+                            <textarea id="content" placeholder="문의 내용 (품목, 중량, 월 예상 물량, 희망 시간 등을 편하게 남겨주세요)"
+                                class="lg:col-span-2"></textarea>
+
+                            <div
+                                class="lg:col-span-2 lg:flex lg:justify-between lg:items-center sm:text-lg lg:text-xl xl:text-2xl">
+                                <div class="checkbox-container">
+                                    <label for="check1" class="checkbox-wrap">
+                                        <input type="checkbox" id="check1">
+                                        <span class="custom-checkbox"></span>
+                                        <p class="checkbox-text text-[0.875em]">개인정보 수집/이용에 <span
+                                                class="font-semibold">동의합니다</span>
+                                            <span class="opacity-70 text-[#333333]">(필수)</span>
+                                        </p>
+                                    </label>
+                                </div>
+                                <button type="submit"
+                                    class="w-full mt-3 mb-6 py-4 rounded-xl text-white bg-[var(--brand-orange)] lg:w-[150px] lg:m-0 xl:w-auto xl:px-10"><em>문의
+                                        신청하기</em></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div
+                        class="border-box grid items-center gap-4 text-lg lg:text-xl lg:w-[420px] xl:text-2xl xl:w-[515px] xl:gap-5">
+                        <div>
+                            <h3 class="pb-4">접수 및 고객센터 안내</h3>
+                            <div class="flex justify-between">
+                                <dl class="flex flex-col">
+                                    <dt class="text-[0.875em] text-[var(--color-gray)] lg:pb-1">접수 대표 번호</dt>
+                                    <dd class="text-[1.25em] text-[var(--brand-orange)]"><a
+                                            href="tel:1588-5452"><em>1588-5452</em></a></dd>
+                                </dl>
+                                <dl class="flex flex-col">
+                                    <dt class="text-[0.875em] text-[var(--color-gray)] lg:pb-1">고객 만족 센터</dt>
+                                    <dd class="text-[1.25em] font-semibold"><a href="tel:02-3446-7668">02-3446-7668</a>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div
+                            class="py-4 h-full flex flex-col justify-center border-y border-[var(--color-border)] xl:py-5">
+                            <h3 class="pb-4">운영일 접수 시간 안내</h3>
+                            <dl class="flex flex-col lg:gap-3">
+                                <div class="flex gap-3">
+                                    <dt class="text-[var(--color-gray)]">&middot; 평일</dt>
+                                    <dd>08:00 - 20:00</dd>
+                                </div>
+                                <div class="flex gap-3">
+                                    <dt>
+                                        <span class="text-[var(--color-gray)]">&middot;</span>
+                                        <span class="text-[var(--color-blue)]">토요일</span>
+                                    </dt>
+                                    <dd>09:00 - 19:00</dd>
+                                </div>
+                                <div class="flex gap-3">
+                                    <dt>
+                                        <span class="text-[var(--color-gray)]">&middot;</span>
+                                        <span class="text-[var(--color-red)]">일/공휴일</span>
+                                    </dt>
+                                    <dd>10:00 - 19:00</dd>
+                                </div>
+                            </dl>
+                        </div>
+                        <p class="text-[var(--color-gray)]">FAX 02-3443-6386</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 기사모집 -->
+        <section id="recruit" class="bg-[var(--brand-navy)] text-white">
+            <div class="content lg:flex lg:flex-row-reverse lg:items-center lg:gap-9">
+                <div class="title lg:!text-left">
+                    <h2>신뢰할 수 있는<br><strong>드림델 운송서비스!</strong></h2>
+                    <p class="opacity-90 font-medium !text-white">기존 운송 업체와 차별화된 서비스를 <br class="hidden lg:block">지향하는
+                        드림델에서 <br class="hidden sm:block">열정 넘치는 라이더/기사분들을 <br class="hidden lg:block">상시 모집합니다.</p>
+                    <p
+                        class="mb-8 py-2 px-5 font-medium bg-[linear-gradient(90deg,#FF6A00_0%,#FF8E08_55%)] rounded-full !text-center sm:w-[440px] sm:mx-auto sm:text-lg lg:text-xl lg:py-4 lg:px-8 lg:m-0 xl:text-2xl">
+                        <span class="call">기사 등록 전화 문의</span> <em class="text-[1.125em]"><a
+                                href="tel:1588-5452">1588-5452</a></em>
+                    </p>
+                </div>
+                <div
+                    class="recruit-info overflow-hidden border border-[rgba(0,0,0,0.8)] rounded-2xl lg:flex-1 lg:h-[600px] lg:flex lg:flex-col lg:justify-end">
+                    <div class="bg-[#080810]/70 lg:py-5 lg:px-10 xl:px-20">
+                        <h3
+                            class="w-full p-4 bg-[#080810]/50 sm:text-xl lg:text-2xl lg:p-0 lg:pb-4 lg:bg-transparent xl:text-3xl">
+                            드림델 기사 모집 요강</h3>
+                        <dl class="p-4 grid gap-3 sm:text-lg lg:text-xl lg:grid-cols-2 lg:p-0 xl:text-2xl">
+                            <div class="flex gap-2 lg:flex-col">
+                                <dt class="opacity-80">&middot; 모집 부분</dt>
+                                <dd class="font-semibold">오토바이/다마스/라보/1톤</dd>
+                            </div>
+                            <div class="flex gap-2 lg:flex-col">
+                                <dt class="opacity-80">&middot; 근무 형태</dt>
+                                <dd class="font-semibold">전업 및 투잡 자유 선택</dd>
+                            </div>
+                            <div class="flex gap-2 lg:flex-col">
+                                <dt class="opacity-80">&middot; 활동 지역</dt>
+                                <dd class="font-semibold">서울 및 수도권 전역</dd>
+                            </div>
+                            <div class="flex gap-2 lg:flex-col">
+                                <dt class="opacity-80">&middot; 지원 자격</dt>
+                                <dd class="font-semibold">면허 소지자(초보 환영)</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 유효성 검사 팝업 모달 -->
+        <div id="validationModal"
+            style="display:none; position:fixed; inset:0; z-index:9999; align-items:center; justify-content:center;">
+            <!-- 배경 오버레이 -->
+            <div id="modalOverlay" style="position:absolute; inset:0; background:rgba(0,0,0,0.45);"></div>
+            <!-- 모달 박스 -->
+            <div
+                style="position:relative; background:#fff; border-radius:16px; padding:36px 32px 28px; max-width:360px; width:calc(100% - 48px); text-align:center; box-shadow:0 8px 32px rgba(0,0,0,0.18);">
+                <!-- 경고 아이콘 -->
+                <div
+                    style="width:52px; height:52px; border-radius:50%; background:#FFF0F0; display:flex; align-items:center; justify-content:center; margin:0 auto 18px;">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 9v4M12 17h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"
+                            stroke="#D7181F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p id="modalMessage"
+                    style="font-size:1rem; color:#222; line-height:1.6; margin-bottom:24px; font-weight:500;"></p>
+                <button id="modalCloseBtn"
+                    style="background:var(--color-red); color:#fff; border:none; border-radius:10px; padding:12px 40px; font-size:1rem; font-weight:700; cursor:pointer; width:100%;">확인</button>
+            </div>
+        </div>
+
+        <!-- 성공 팝업 모달 -->
+        <div id="successModal"
+            style="display:none; position:fixed; inset:0; z-index:9999; align-items:center; justify-content:center;">
+            <div id="successOverlay" style="position:absolute; inset:0; background:rgba(0,0,0,0.45);"></div>
+            <div
+                style="position:relative; background:#fff; border-radius:16px; padding:36px 32px 28px; max-width:360px; width:calc(100% - 48px); text-align:center; box-shadow:0 8px 32px rgba(0,0,0,0.18);">
+                <!-- 성공 아이콘 -->
+                <div
+                    style="width:52px; height:52px; border-radius:50%; background:#e8f2f5; display:flex; align-items:center; justify-content:center; margin:0 auto 18px;">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 6L9 17l-5-5" stroke="#0873FF" stroke-width="2.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <p style="font-size:1.1rem; color:#222; font-weight:700; margin-bottom:8px;">등록되었습니다.</p>
+                <p style="font-size:0.9rem; color:#666; margin-bottom:24px;">상담 문의가 정상적으로 접수되었습니다.<br>빠른 시일 내에 연락드리겠습니다.
+                </p>
+                <button id="successCloseBtn"
+                    style="background:var(--brand-navy); color:#fff; border:none; border-radius:10px; padding:12px 40px; font-size:1rem; font-weight:700; cursor:pointer; width:100%;">확인</button>
+            </div>
+        </div>
+    </main>
+    <footer
+        class="pt-6 pb-3 px-4 text-white/50 bg-[#3A3A3A] sm:text-lg lg:text-xl lg:pt-10 lg:pb-5 xl:text-2xl xl:pt-20 xl:pb-10">
+        <div class="max-w-[1338px] mx-auto">
+            <dl class="flex flex-col gap-1 lg:gap-2 xl:gap-4">
+                <div class="flex">
+                    <div>드림델</div>
+                    <div class="flex line">
+                        <dt>대표</dt>
+                        <dd>박상희</dd>
+                    </div>
+                </div>
+                <div class="flex">
+                    <dt>주소</dt>
+                    <dd>서울 특별시 강남구 논현동 114-14 금산빌딩 5층</dd>
+                </div>
+                <div class="flex">
+                    <dt>사업자등록번호</dt>
+                    <dd>211-86-77077</dd>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="flex">
+                        <dt>대표전화</dt>
+                        <dd class="text-[var(--brand-orange)]">1588-5452</dd>
+                    </div>
+                    <div class="flex line">
+                        <dt>팩스</dt>
+                        <dd>02-3446-6388</dd>
+                    </div>
+                </div>
+                <div class="flex">
+                    <dt>통신판매업 신고번호</dt>
+                    <dd>2008-서울강남-2240호</dd>
+                </div>
+            </dl>
+            <div class="pt-10 text-[0.875em] lg:pt-20 lg:flex lg:gap-4 lg:items-center">
+                <button id="privacyPolicyButton" type="button" class="opacity-70 font-semibold">개인정보처리방침</button>
+                <p class="opacity-30 pt-1 lg:pt-0">COPYRIGHT © (주)드림델 ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="link-wrap fixed bottom-40 right-0 flex flex-col text-center xl:bottom-10 xl:right-10">
+        <!-- <button class="ai-quick-talk-btn bg-[var(--brand-orange)]" type="button">AI퀵톡 접수</button> -->
+        <a href="https://ad.dreamdel.co.kr" target="_blank" class="internet bg-white font-bold text-[var(--color-blue)]">인터넷 접수</a>
+    </div>
+
+    <!-- 모달창 ai퀵톡접수 -->
+    <div id="aiQuickTalkModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="aiQuickTalkTitle" hidden>
+        <!-- 모달 백드롭 -->
+        <div class="modal__backdrop" data-modal-close></div>
+
+        <!-- 모달 패널 -->
+        <div class="modal__panel lg:text-lg xl:text-xl">
+            <div class="modal__header sm:text-center">
+                <h2 class="pb-4 text-[1.125em]">드림델 24시 <span class="text-[var(--brand-orange)]">AI퀵톡 접수</span></h2>
+                <p class="opacity-80">카카오톡으로 출발 도착지만 남기면 실시간 자동 배차</p>
+                <button type="button" class="modal__close" aria-label="AI퀵톡 접수 팝업 닫기" data-modal-close>&times;</button>
+            </div>
+
+            <!-- 모달 컨텐츠 -->
+            <div class="modal__content">
+                <div class="sm:text-center">
+                    <h3>출발지와 도착지 주소로 간편 접수</h3>
+                    <p class="pt-2 pb-4 text-[var(--color-gray)] text-[0.875em] md:pt-4 md:pb-6">
+                        카카오톡 채널에 주소와 물품 정보를 입력하시면 <br class="hidden sm:block">관제 시스템에서 가장 가까운 기사님을 신속하게 자동 배치합니다.
+                    </p>
+                </div>
+
+                <!-- 3단계 카드 영역 -->
+                <div class="flex flex-col gap-2 sm:grid sm:grid-cols-3 md:gap-4">
+                    <div class="border-box small">
+                        <strong class="text-[0.875em] text-[var(--color-gray)]"><span
+                                class="text-[var(--brand-orange)]">01</span> CHAT</strong>
+                        <h4 class="text-[#333333] pt-2 pb-1 xl:pb-4">톡 메시지 전송</h4>
+                        <p class="text-[0.875em]">출발 도착지 주소 입력</p>
+                    </div>
+                    <div class="border-box small">
+                        <strong class="text-[0.875em] text-[var(--color-gray)]"><span
+                                class="text-[var(--brand-orange)]">02</span> AI MATCH</strong>
+                        <h4 class="text-[#333333] pt-2 pb-1 xl:pb-4">10초 자동 배차</h4>
+                        <p class="text-[0.875em]">최단거리 기사 우선 배정</p>
+                    </div>
+                    <div class="border-box small">
+                        <strong class="text-[0.875em] text-[var(--color-gray)]"><span
+                                class="text-[var(--brand-orange)]">03</span> TRACK</strong>
+                        <h4 class="text-[#333333] pt-2 pb-1 xl:pb-4">실시간 관제</h4>
+                        <p class="text-[0.875em]">픽업 및 도착 완료 알림</p>
+                    </div>
+                </div>
+
+                <div class="mt-4 flex flex-col items-center gap-3 md:mt-6">
+                    <!-- 카카오톡 AI 퀵톡 접수하기 버튼 -->
+                    <button type="button"
+                        class="max-w-[529px] w-full flex items-center justify-center gap-2 rounded-xl bg-[#FFEB00] py-4 font-semibold hover:bg-[#FEE500] transition-colors shadow-md">
+                        <!-- 카카오 심볼 아이콘 예시 -->
+                        <svg class="h-5 w-5 fill-current" viewBox="0 0 24 24">
+                            <path
+                                d="M12 3c-4.97 0-9 3.13-9 7 0 2.38 1.54 4.47 3.88 5.74l-.94 3.47c-.1.37.31.67.63.46l4.08-2.69c.14.01.29.02.43.02 4.97 0 9-3.13 9-7s-4.03-7-9-7z" />
+                        </svg>
+                        카카오톡 AI 퀵톡 접수하기
+                    </button>
+
+                    <!-- 인터넷 실시간 접수 바로가기 버튼 -->
+                    <button type="button"
+                        class="max-w-[529px] w-full rounded-xl bg-[var(--brand-navy)] py-4 font-semibold text-white hover:bg-[#1f2937] transition-colors shadow-md">
+                        인터넷 실시간 접수 바로가기
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모달창 개인정보처리방침 -->
+    <div id="privacyPolicyModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="privacyPolicyTitle"
+        hidden>
+        <!-- 모달 백드롭 -->
+        <div class="modal__backdrop" data-privacy-modal-close></div>
+
+        <!-- 모달 패널 -->
+        <div class="modal__panel text-sm xl:text-base">
+
+            <!-- 모달 헤더 (어두운 배경, 고정) -->
+            <div class="modal__header">
+                <h2 class="text-[1.125em]">(주)드림델 개인정보처리방침</h2>
+                <button type="button" class="modal__close" aria-label="개인정보처리방침 팝업 닫기"
+                    data-privacy-modal-close>&times;</button>
+            </div>
+
+            <!-- 모달 컨텐츠 (스크롤 영역) -->
+            <div class="modal__content">
+
+                <!-- 서두 내용 -->
+                <div>
+                    <p class="font-semibold text-[#333333] pb-2">
+                        (주)드림델(이하 '회사')은 정보주체의 자유와 권리 보호를 위해 「개인정보 보호법」 및 관계 법령이 정한 바를 엄격히 준수하여, 고객의 개인정보를 안전하게 관리하고
+                        있습니다.
+                    </p>
+                    <p>
+                        본 개인정보처리방침은 회사가 제공하는 퀵서비스, 차량 화물운송, 전국연계 운송, 견적 상담 및 기사 모집 등 제반 서비스 이용에 적용됩니다.
+                    </p>
+                </div>
+
+                <!-- 제1조 -->
+                <div>
+                    <h3>제1조 (개인정보의 처리 목적)</h3>
+                    <p>
+                        회사는 다음의 목적을 위하여 최소한의 개인정보를 처리합니다. 처리하고 있는 개인정보는 다음의 목적 이외의 용도로는 이용되지 않으며, 이용 목적이 변경되는 경우에는 관련
+                        법률에 따라 별도의 동의를 받는 등 필요한 조치를 이행할 예정입니다.
+                    </p>
+                    <ul class="flex flex-col gap-1 text-[0.875em]">
+                        <li><em>운송 및 실시간 배차 서비스 제공</em> : 퀵서비스, 다마스/라보/1톤 차량 화물, 전국연계 운송
+                            접수, 전담 기사 배차, 물품픽업 및 배송 완료 안내, 실시간 위치 조회.</li>
+                        <li><em>견적 및 법인 계약 상담</em> : 맞춤형 운송 단가 산출, 기업 전용 요율 상담, 법인 월정산 계약
+                            체결 및 전자세금계산서 발행</li>
+                        <li><em>기사 파트너 모집 및 관리</em> : 퀵기사 및 화물기사 지원 접수, 면허 및 자격 검증, 배차 시스템
+                            등록 및 정산 관리.</li>
+                        <li><em>고객 민원 및 보험 처리</em> : 배송 문의 응대, 지연/파손/분실 사고 접수 및 적재물배상책임보험
+                            보상 처리.</li>
+                    </ul>
+                </div>
+
+                <!-- 제2조 -->
+                <div>
+                    <h3>제2조 (처리하는 개인정보의 항목)</h3>
+                    <div class="overflow-x-auto">
+                        <table class="border-box w-full text-left border-collapse text-[0.875em]">
+                            <thead>
+                                <tr class="bg-[#eaeaea]/20 border-b border-[var(--color-border)]">
+                                    <th class="py-2 px-4 w-1/4">구분</th>
+                                    <th class="py-2 px-4 w-1/2 border-x border-[var(--color-border)]">수집 항목</th>
+                                    <th class="py-2 px-4 w-1/4">수집 방법</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="py-2 px-4 font-semibold bg-[#eaeaea]/20">운송 접수 / 견적 문의</td>
+                                    <td class="py-2 px-4 border-x border-[var(--color-border)]">성명(담당자명), 연락처(휴대전화번호),
+                                        출발지 및
+                                        도착지 주소, 회사명(법인 시), 요청 품목 및 중량</td>
+                                    <td class="py-2 px-4">홈페이지 폼, 간편접수, 전화 접수</td>
+                                </tr>
+                                <tr class="border-y border-[var(--color-border)]">
+                                    <td class="py-2 px-4 font-semibold bg-[#eaeaea]/20">기사 지원</td>
+                                    <td class="py-2 px-4 border-x border-[var(--color-border)]">성명, 연락처, 희망 활동 지역, 운전 및
+                                        배송 경력
+                                    </td>
+                                    <td class="py-2 px-4">기사 지원 신청 폼</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-2 px-4 font-semibold bg-[#eaeaea]/20">서비스 이용 시 자동 수집</td>
+                                    <td class="py-2 px-4 border-x border-[var(--color-border)]">IP주소, 쿠키, 서비스 이용 기록, 방문
+                                        일시,
+                                        기기 정보</td>
+                                    <td class="py-2 px-4">웹사이트 자동 생성</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 제3조 -->
+                <div>
+                    <h3>제3조 (개인정보의 처리 및 보유 기간)</h3>
+                    <p>
+                        회사는 법령에 따른 개인정보 보유·이용 기간 또는 정보주체로부터 개인정보를 수집 시에 동의받은 기간 내에서 개인정보를 처리·보유하며, 목적 달성 시 지체없이 파기합니다.
+                    </p>
+                    <ul class="flex flex-col gap-1 text-[0.875em]">
+                        <li><em>단순 운송 의뢰 및 상담 기록</em> : 배송 및 상담 완료일로부터 1년</li>
+                        <li><em>계약 또는 청약철회 등에 관한 기록</em> : 5년(전자상거래 등에서의 소비자보호에 관한 법률)
+                        </li>
+                        <li><em>대금결제 및 재화 등의 공급에 관한 기록</em> : 5년(전자상거래 등에서의 소비자보호에 관한 법률)
+                        </li>
+                        <li><em>소비자의 불만 또는 분쟁처리에 관한 기록</em> : 3년(전자상거래 등에서의 소비자보호에 관한 법률)
+                        </li>
+                        <li><em>웹사이트 접속 로그 기록</em> : 3개월(통신비밀보호법)</li>
+                    </ul>
+                </div>
+
+                <!-- 제4조 -->
+                <div>
+                    <h3>제4조 (개인정보의 제3자 제공 및 배송 위탁)</h3>
+                    <p>
+                        회사는 정보 주체동의 없이 개인정보를 제3자에게 제공하지 않습니다. 단, 다음의 경우 최소한의 범위 내에서 제공됩니다.
+                    </p>
+                    <ul class="flex flex-col gap-1 text-[0.875em]">
+                        <li><em>제공받는 자 :</em> 배차된 담당 퀵기사 및 화물 운송 기사</li>
+                        <li><em>제공 목적 :</em> 물품 픽업 및 배송지 전달, 수취인 확인 및 유선 연락</li>
+                        <li><em>제공 항목 :</em> 출발지/도착지 주소, 의뢰인 및 수취인 성명, 연락처</li>
+                        <li><em>보유 및 이용 기간 :</em> 배송 완료 후 즉시 파기</li>
+                    </ul>
+                </div>
+
+                <!-- 제5조 -->
+                <div>
+                    <h3>제5조 (정보주체의 권리와 행사 방법)</h3>
+                    <p>
+                        정보 주체는 회사에 대해 언제든지 개인정보 열람·정정·삭제·처리정지 요구 등의 권리를 행사할 수 있으며, 회사는 지체 없이 조치합니다. 권리 행사는 서면, 전자우편,
+                        고객센터
+                        유선 전화(1588-5575)를 통하여 가능하며 대리인을 통해서도 요청하실 수 있습니다.
+                    </p>
+                </div>
+
+                <!-- 제6조 -->
+                <div>
+                    <h3>제6조 (개인정보 보호책임자 및 상담 창구)</h3>
+                    <p>
+                        회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보 주체의 불만처리 및 피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고
+                        있습니다.
+                    </p>
+                    <dl class="border-box small flex flex-col gap-2 text-[0.875em]">
+                        <div class="sm:flex">
+                            <dt class="sm:w-[130px] xl:w-[145px]">개인정보 보호 책임자</dt>
+                            <dd class="text-[#333333] sm:flex-1">박상희 대표이사</dd>
+                        </div>
+                        <div class="sm:flex">
+                            <dt class="sm:w-[130px] xl:w-[145px]">담당부서</dt>
+                            <dd class="text-[#333333] sm:flex-1">(주)드림델 고객만족운영팀</dd>
+                        </div>
+                        <div class="sm:flex">
+                            <dt class="sm:w-[130px] xl:w-[145px]">대표 전화</dt>
+                            <dd class="text-[#333333] sm:flex-1">1588-5452/02-3446-7668</dd>
+                        </div>
+                        <div class="sm:flex">
+                            <dt class="sm:w-[130px] xl:w-[145px]">사업장 주소</dt>
+                            <dd class="text-[#333333] sm:flex-1">서울특별시 강남구 논현동 114-14 금산빌딩 5층</dd>
+                        </div>
+                    </dl>
+
+                </div>
+
+                <!-- 제7조 -->
+                <div>
+                    <h3>제7조 (권익침해 구제 기관 안내)</h3>
+                    <p>
+                        개인정보 침해에 대한 피해 구제, 상담 등이 필요하신 경우 아래 기관에 문의하실 수 있습니다.
+                    </p>
+                    <dl class="border-box small flex flex-col gap-2 text-[0.875em]">
+                        <div class="sm:flex">
+                            <dt class="sm:w-[130px] xl:w-[145px]"><em>개인정보분쟁조정위원회</em></dt>
+                            <dd class="sm:flex-1">(국번없이) 1833-6972</dd>
+                        </div>
+                        <div class="sm:flex">
+                            <dt class="sm:w-[130px] xl:w-[145px]"><em>개인정보침해신고센터</em></dt>
+                            <dd class="sm:flex-1">(국번없이) 118</dd>
+                        </div>
+                        <div class="sm:flex">
+                            <dt class="sm:w-[130px] xl:w-[145px]"><em>대검찰청 사이버수사과</em></dt>
+                            <dd class="sm:flex-1">(국번없이) 1301</dd>
+                        </div>
+                        <div class="sm:flex">
+                            <dt class="sm:w-[130px] xl:w-[145px]"><em>경찰청 사이버수사국</em></dt>
+                            <dd class="sm:flex-1">(국번없이) 182</dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- 하단 공고일자 -->
+                <div>
+                    <p class="pt-10 pb-2"><em>공고일자</em> : 2026년 1월 1일 / <em>시행일자</em> : 2026년 1월 1일</p>
+                    <p>(주)드림델 개인정보보호 준수</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 쿠폰판 다운로드 -->
+    <div id="couponDownloadModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="couponDownloadTitle" hidden>
+        <!-- 모달 백드롭 -->
+        <div class="modal__backdrop" data-modal-close></div>
+
+        <!-- 모달 패널 -->
+        <div class="modal__panel lg:text-lg xl:text-xl">
+            <div class="modal__header sm:text-center">
+                <h2 class="pb-4 text-[1.125em]"><span class="text-[var(--brand-orange)]">드림델 쿠폰판</span> 다운로드</h2>
+                <p>드림델 운송서비스를 받으실 때마다 쿠폰판을 활용해보세요. <br>쿠폰판 <span
+                        class="underline text-[var(--brand-orange)]">10회 이용 시 현금 1만원</span> 또는 <span
+                        class="underline text-[var(--brand-orange)]">30회 이용 시 현금 3만원</span>을 드립니다!<br><br><span
+                        class="opacity-80 text-[0.875em]">쿠폰판을 <span class="underline">분실하신 경우</span> 아래에서 다운받으신 후 사용하시기
+                        바랍니다.</span></p>
+                <button type="button" class="modal__close" aria-label="쿠폰판 다운로드 팝업 닫기" data-modal-close>&times;</button>
+            </div>
+
+            <!-- 모달 컨텐츠 -->
+            <div class="modal__content">
+                <div class="grid grid-cols-2 gap-6 mb-8">
+                    <img src="images/print_couponZone.jpg" alt="컬러 쿠폰판 이미지" class="border-box !rounded-none !p-0">
+                    <img src="images/print_couponZone.jpg" alt="흑백 쿠폰판 이미지" class="border-box !rounded-none !p-0 grayscale">
+                </div>
+
+                <button type="button" class="print-btn block w-full max-w-[300px] mx-auto py-4 rounded-full bg-[var(--brand-orange)] text-white text-center" data-print-coupon><em>쿠폰판 인쇄</em></button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 쿠폰 인쇄용 영역 -->
+    <div id="couponPrintArea" hidden>
+        <img id="couponPrintImage" src="" alt="인쇄할 쿠폰판">
+    </div>
+
+    <script src="js/scripts.js"></script>
+    <script>
+        (function () {
+            /* ───────── 모달 헬퍼 ───────── */
+            function showModal(modalId, message) {
+                var modal = document.getElementById(modalId);
+                if (message !== undefined) {
+                    // \n을 <br>로 변환 후 innerHTML로 삽입
+                    document.getElementById('modalMessage').innerHTML = message.replace(/\n/g, '<br>');
+                }
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+            function hideModal(modalId) {
+                document.getElementById(modalId).style.display = 'none';
+                document.body.style.overflow = '';
+            }
+
+            /* 유효성 팝업 닫기 */
+            document.getElementById('modalCloseBtn').addEventListener('click', function () {
+                hideModal('validationModal');
+            });
+            document.getElementById('modalOverlay').addEventListener('click', function () {
+                hideModal('validationModal');
+            });
+
+            /* 성공 팝업 닫기 */
+            document.getElementById('successCloseBtn').addEventListener('click', function () {
+                hideModal('successModal');
+            });
+            document.getElementById('successOverlay').addEventListener('click', function () {
+                hideModal('successModal');
+            });
+
+            /* ───────── 이메일 형식 검사 ───────── */
+            function isValidEmail(email) {
+                return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.trim());
+            }
+
+            /* ───────── 연락처 형식 검사 (숫자 + 하이픈, 최소 9자리 이상) ───────── */
+            function isValidPhone(phone) {
+                return /^[\d\-+]{9,15}$/.test(phone.replace(/\s/g, ''));
+            }
+
+            /* ───────── Flutter 전송 ───────── */
+            function sendContactToFlutter(data) {
+                try {
+                    if (window.flutter_inappwebview && window.flutter_inappwebview.callHandler) {
+                        // 'MenuClick'이라는 핸들러 이름으로 value('0' 또는 '1')를 전달합니다.
+                        window.flutter_inappwebview.callHandler('onContactSubmit', data);
+                    }
+                    else {
+                        // 일반 웹 브라우저 환경일 경우 원래 링크로 이동
+                        console.log(data);
+                        window.parent.postMessage({
+                            'handler': 'onContactSubmit',
+                            'data': data
+                        }, '*');
+                    }
+
+                    console.log('[sendContactToFlutter] 전송 완료:', data);
+                    return Promise.resolve(true);
+                } catch (e) {
+                    console.error('[sendContactToFlutter] 전송 실패:', e);
+                    return Promise.resolve(false);
+                }
+            }
+
+            /* ───────── 폼 제출 처리 ───────── */
+            document.getElementById('contactForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                var serviceName = document.getElementById('serviceName').value.trim();
+                var company = document.getElementById('company').value.trim();
+                var contactPerson = document.getElementById('contactPerson').value.trim();
+                var phone = document.getElementById('phone').value.trim();
+                var privacyAgree = document.getElementById('check1').checked;
+                var companyAddr = document.getElementById('companyAddr').value.trim();
+                var destAddr = document.getElementById('destAddr').value.trim();
+                var content = document.getElementById('content').value.trim();
+
+                /* 유효성 검사 순서: 미입력 항목을 순서대로 체크 */
+                if (!contactPerson) {
+                    showModal('validationModal', '담당자 성함을 입력해 주세요.');
+                    document.getElementById('contactPerson').focus();
+                    return;
+                }
+                if (!phone) {
+                    showModal('validationModal', '연락처를 입력해 주세요.');
+                    document.getElementById('phone').focus();
+                    return;
+                }
+                if (!isValidPhone(phone)) {
+                    showModal('validationModal', '올바른 연락처 형식을 입력해 주세요.\n예) 010-1234-5678');
+                    document.getElementById('phone').focus();
+                    return;
+                }
+                if (!privacyAgree) {
+                    showModal('validationModal', '개인정보 수집 및 활동 동의는\n필수 항목입니다.');
+                    return;
+                }
+
+                /* memo 항목 문자열 생성 */
+                var displayService = serviceName ? serviceName : '퀵서비스';
+                var memoText = '서비스명: ' + displayService + '\n' +
+                    '회사명(동/구 또는 주소): ' + companyAddr + '\n' +
+                    '도착지(동/구 또는 주소): ' + destAddr + '\n' +
+                    '문의 내용: ' + content;
+
+                /* 모든 유효성 통과 → 데이터 수집 */
+                var formData = {
+                    company: company,
+                    email: "",
+                    contactPerson: contactPerson,
+                    phone: phone,
+                    wantPriceList: false,
+                    wantConsulting: false,
+                    privacyAgree: privacyAgree,
+                    submittedAt: new Date().toISOString(),
+                    memo: memoText
+                };
+
+                /* 제출 버튼 비활성화 (중복 전송 방지) */
+                var submitBtn = this.querySelector('button[type="submit"]');
+                submitBtn.disabled = true;
+                submitBtn.textContent = '전송 중...';
+
+                sendContactToFlutter(formData).then(function (success) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = '상담 문의';
+
+                    if (success) {
+                        /* 폼 초기화 */
+                        document.getElementById('contactForm').reset();
+                        /* 성공 팝업 표시 */
+                        showModal('successModal');
+                    } else {
+                        showModal('validationModal', '전송 중 오류가 발생했습니다.\n잠시 후 다시 시도해 주세요.');
+                    }
+                })
+                    .catch(function () {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = '상담 문의';
+                        showModal('validationModal', '전송 중 오류가 발생했습니다.\n잠시 후 다시 시도해 주세요.');
+                    });
+            });
+        })();
+    </script>
+</body>
+
+</html>
